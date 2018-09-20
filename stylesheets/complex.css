@@ -1,7 +1,6 @@
 
-body.backing {
+div.background {
     background-image: url("../assets/background.png");
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
     background-repeat: repeat;
+    background-size: cover;
 }
