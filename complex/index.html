@@ -1,12 +1,25 @@
 <html>
     <head>
         <title>Projects</title>
-        <link href="../stylesheets/complex.css" ref="stylesheet">
-        <link href="../assets/iconthick.ico" ref="icon">
+        <link href="stylesheets/main.css" rel="stylesheet">
+        <link href="../assets/iconthick.ico" rel="icon">
+        <script>
+            window.location.href="../index.html"
+        </script>
     </head>
-    <body>
-        <div class="background">
-            memes
-        </div>
+    <body id="a" style="background-color: rgb(50, 50, 50);">
+            <div class="background" id="b" style="background-image: url('../assets/backgrounddark.png');"></div>
+            <div class="container">
+            </div>
     </body>
+    <script>
+            const h = new Date().getHours();
+            const body = document.getElementById("a");
+            const image = document.getElementById("b");
+            
+            if (h < 20 && h > 7) {
+                body.style = "background-color: rgb(255, 255, 255);"
+                image.style = "background-image: url('../assets/backgroundlight.png');"
+             }
+        </script>
 </html>

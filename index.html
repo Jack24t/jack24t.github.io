@@ -1,12 +1,64 @@
 <html>
     <head>
+        <link href="stylesheets/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/iconthick.ico" rel="icon">
         <title>Projects</title>
-        <link href="stylesheets/projects.css" ref="stylesheet">
-        <link href="assets/iconthick.ico" ref="icon">
+        <script>
+            function complex() {
+                window.location.href = "complex/index.html"
+            }
+        </script>
     </head>
-    <body>
-        <div class="background">
-            projects
+    <body id="a" style="background-color: rgb(50, 50, 50);">
+        <div class="background" id="b" style="background-image: url('assets/backgrounddark.png');"></div>
+        <div class="container">
+            <img class="icon" width=100 height=100 src="assets/iconthick.ico">
+            <ul class="content">
+                <button class="card" id="c1" onclick="complex();">
+                    <img src="assets/complexcolor.png">
+                    <p id="h">Domain Colouring</p>
+                    <p id="t">Sample Description</p>
+                    <p id="arrow"><i class="material-icons">forward</i></p>
+                </button>
+                <button class="card" id="c2" onclick="complex();">
+                    <img src="assets/complexcolor.png">
+                    <p id="h">Electric Fields</p>
+                    <p id="t">Sample Description</p>
+                    <p id="arrow"><i class="material-icons">forward</i></p>
+                </button>
+                <button class="card" id="c3" onclick="complex();">
+                        <img src="assets/complexcolor.png">
+                        <p id="h">Sample Text</p>
+                        <p id="t">Sample Description</p>
+                        <p id="arrow"><i class="material-icons">forward</i></p>
+                </button>
+                <button class="card" id="c4" onclick="complex();">
+                        <img src="assets/complexcolor.png">
+                        <p id="h">Sample Text</p>
+                        <p id="t">Sample Description</p>
+                        <p id="arrow"><i class="material-icons">forward</i></p>
+                </button>
+                <button class="card" id="c5" onclick="complex();">
+                        <img src="assets/complexcolor.png">
+                        <p id="h">Sample Text</p>
+                        <p id="t">Sample Description</p>
+                        <p id="arrow"><i class="material-icons">forward</i></p>
+                </button>
+            </ul>
         </div>
+        <p style="text-align:center;position:absolute;transform:translate(60%, calc(-100% - 20px));color:rgb(150, 150, 150);font-family:'Roboto Black'">
+            Jackt
+        </p>
     </body>
+    <script>
+        const h = new Date().getHours();
+        const body = document.getElementById("a");
+        const image = document.getElementById("b");
+
+        if (h < 20 && h > 7) {
+            body.style = "background-color: rgb(255, 255, 255);"
+            image.style = "background-image: url('assets/backgroundlight.png');"
+         }
+    </script>
 </html>

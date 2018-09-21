@@ -1,0 +1,21 @@
+* {
+    font-family: "Roboto Medium";
+    margin: 0;
+}
+
+div.background {
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    filter: blur(0px);
+}
+
+div.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -100%);
+    position: absolute;
+}

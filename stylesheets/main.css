@@ -1,0 +1,195 @@
+* {
+    font-family: "Roboto Medium";
+    margin: 0;
+}
+
+div.background {
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    filter: blur(0px);
+}
+
+div.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -100%);
+    position: absolute;
+}
+
+ul.content {
+    list-style-type: none;
+    margin-top: 140px;
+    padding-left: 0px;
+}
+
+button.card {
+    font-size: 16;
+    outline: none;
+    padding: 0;
+    width: 500px;
+    margin-bottom: 24px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+    margin-left: calc(50% - 250px);
+    height: 80px;
+    display: block;
+    transform: translate(0, 0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    border: 0px solid rgb(255, 106, 0);
+
+    animation-name: trans;
+    animation-duration: 0.8s;
+    animation-delay: 0.85s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+button.card#c1 {
+    animation-delay: 0.95s;
+}
+
+button.card#c2 {
+    animation-delay: 1.05s;
+}
+
+button.card#c3 {
+    animation-delay: 1.15s;
+}
+
+button.card#c4 {
+    animation-delay: 1.25s;
+}
+
+button.card#c5 {
+    animation-delay: 1.35s;
+}
+
+button.card:hover {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 12px 12px 12px 12px;
+    width: 550px;
+    margin-left: calc(50% - 275px);
+}
+
+button.card:active:hover {
+    background: #eee;
+}
+
+button.card p {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    color: rgb(130, 130, 130);
+    float: left;
+    margin: 5;
+    margin-bottom: -4px;
+
+    animation-name: trans;
+    animation-duration: 0.8s;
+    animation-delay: 0.85s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+button.card p#h {
+    font-size: 18px;
+    padding-right: 50%;
+
+    animation-name: trans;
+    animation-duration: 0.8s;
+    animation-delay: 0.85s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+button.card:hover p#h {
+    color: rgb(50, 50, 50);
+    float: left;
+    margin: 5;
+    margin-bottom: -4px;
+}
+
+button.card p#t {
+    font-family: "Roboto";
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+
+    animation-name: trans;
+    animation-duration: 0.8s;
+    animation-delay: 0.85s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+button.card:hover p#t {
+    color: rgb(130, 130, 130);
+    color: rgb(50, 50, 50);
+    float: left;
+    margin: 5;
+    margin-bottom: -4px;
+}
+
+button.card p#arrow {
+    position: absolute;
+    left: calc(100% - 40px);
+    top: 22px;
+    font-size: 32px;
+    color: rgb(180, 180, 180);
+    opacity: 0;
+
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+button.card:hover p#arrow {
+    opacity: 1;
+}
+
+button.card img {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    height: 70;
+    border-radius: 4px;
+    margin: 5px;
+    margin-right: 5px;
+    float: left;
+
+    animation-name: trans;
+    animation-duration: 0.8s;
+    animation-delay: 0.85s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+button.card:hover img {
+    height: 80;
+    border-radius: 12px 0px 0px 12px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+@keyframes trans {
+    from {opacity: 0};
+    to {opacity: 1};
+}
+
+@keyframes sm {
+    0% {filter: grayscale(100%);-webkit-filter: grayscale(100%);};
+    100% {filter: grayscale(0%);-webkit-filter: grayscale(0%);};
+}
+
+.icon {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -50px;
+    animation-name: sm;
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
